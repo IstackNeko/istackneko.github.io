@@ -3,6 +3,15 @@
 $(function () {
     // Loads header and footer on each page
 
-    $('#header').load('partials/header.html');
-    $('#footer').load('partials/footer.html');
+    $.get(
+        'partials/header.html',
+        function (response) {
+            $("#header").html(response);
+    });
+
+    $.get(
+        'partials/footer.html',
+        function (response) {
+            $("#footer").html(response);
+    });
 });
