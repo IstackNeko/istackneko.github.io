@@ -6,7 +6,7 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/">Accueil<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
@@ -29,3 +29,14 @@
         </div>
     </div>
 </nav>
+
+<script>
+    'use strict';
+
+    $(function () {
+        // Add active class to menu item
+        var current = '.nav-link[href="' + location.pathname +'"]';
+
+        if ($(current).length) $(current).addClass('active');
+    });
+</script>
