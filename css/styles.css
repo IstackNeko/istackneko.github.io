@@ -8,6 +8,23 @@ body {
     /* Hide left/right slider */
     overflow-x: hidden;
 }
+.hero-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/BGtest.jpg');
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+}
+.hero-banner .container {
+    color: white;
+    margin-top: 20vh;
+    margin-left: 5vw;
+}
+.display-4 {
+    font-weight: bold;
+}
 .footer {
     position: absolute;
     bottom: 0;
@@ -24,9 +41,6 @@ body {
 }
 .tpe-2 {
     background: #c2c2c2;
-}
-.tpe-3 {
-    background: white;
 }
 .picto {
     font-size: 80px;
@@ -51,4 +65,16 @@ body {
 }
 .choice-title {
     font-weight: bold;
+}
+.histoire-1 {
+    background: white;
+}
+.histoire-2 {
+    background: #c2c2c2;
+}
+.histoire-1, .histoire-2 {
+    padding: 80px 0;
+}
+.img-thumbnail {
+    border: 0;
 }
